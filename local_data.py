@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 information = {
-    'username': 'zirusdigital@gmail.com',
-    'password': 'ZPDigital*'
+    'username': 'mi_email_sender@mail.com',
+    'password': 'm1_$upper_P4ssW0d!*'
 }
 
 
