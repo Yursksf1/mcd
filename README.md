@@ -27,12 +27,6 @@ source venv/bin/activate
 deactivate
 ```
 
-clone use git
-```
-git clone git@github.com:Yursksf1/electricSoft.git
-```
-
-
 ## install requirements
 install use pip
 ```
