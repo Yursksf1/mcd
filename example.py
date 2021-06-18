@@ -14,7 +14,24 @@ def send_mail(send_from, subject, text, send_to, files= None):
     msg['To'] = ', '.join(send_to)  
     msg['Subject'] = subject
 
-    msg.attach(MIMEText(text))
+    text_to_sent = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.python.org"
+    if text:
+        text_to_sent = text_to_sent + text 
+
+    html = """
+    <html>
+    <head></head>
+    <body>
+        <p>Hi!<br>
+        How are you?<br>
+        Here is the <a href="http://www.python.org">link</a> you wanted.
+        </p>
+    </body>
+    </html>
+    """
+
+    msg.attach(MIMEText(text, 'plain'))
+    msg.attach(MIMEText(html, 'html'))
 
     for f in files or []:
         with open(f, "rb") as fil: 
@@ -36,10 +53,10 @@ password = information.get('password')
 print(username, password)
 default_address = ['test_to_mac@mailinator.com'] 
 
-# send_mail(
-#     send_from=username,
-#     subject="test",
-#     text="text",
-#     send_to= default_address,
-#     files= None
-#     )
+send_mail(
+    send_from=username,
+    subject="test",
+    text="text",
+    send_to= default_address,
+    files= None
+    )
