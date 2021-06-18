@@ -29,7 +29,6 @@ def run_script():
         name = i[1]
         archivo = i[2]
         dir = path_files+archivo
-        print("la direcicon de {name} es {dir}".format(name=name,dir=dir))
         
     
     # dirs = os.listdir(path_files)
