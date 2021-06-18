@@ -16,7 +16,7 @@ def sent_mail(email, name, url):
     password = information.get('password')
 
     send_from = username
-    subject = "BONO ZP"
+    subject = "Bono Ziru's Pizza 🍕 Col. San Pedro 🎁"
 
     print('voy a enviar un email a: {} {} {}'.format(email, name, url))
 
@@ -28,6 +28,7 @@ def sent_mail(email, name, url):
     msg['Subject'] = subject
 
     text = text_base.format(name=name, url=url)
+    text = " "
     html = Template(html_base).substitute(name=name, url=url)
 
     msg.attach(MIMEText(text, 'plain'))
@@ -50,6 +51,7 @@ def run_script():
         time.sleep(1)
         email = data[0]
         name = data[1]
+        name = name.split(' ')[-1]
         url = data[2]
 
         sent_mail(
