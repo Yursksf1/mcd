@@ -30,7 +30,6 @@ def run_script():
         archivo = i[2]
         dir = path_files+archivo
         
-    
     # dirs = os.listdir(path_files)
     # print('dirs', dirs)
 
