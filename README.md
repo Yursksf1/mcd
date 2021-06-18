@@ -41,10 +41,19 @@ information = {
     'username': 'my_email@mail.com',
     'password': 'super_secure_password'
 }
+
+datas = [[]]
+
+text = "Hi!\n{name}\nHere is the link you wanted:\n{url}"
+
+html = '''
+<h1> Hello! </h1>
+'''
+...
 ```
 
 
 ### Run File 
 ```
-python example.py
+python run_all.py
 ```

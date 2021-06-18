@@ -1,13 +1,23 @@
+# -*- coding: utf-8 -*-
+
+information = {
+    'username': 'zirusdigital@gmail.com',
+    'password': 'ZPDigital*'
+}
+
+
+datas = [
+['angiepaolarr@gmail.com', 'ZAFRA TRIANA LEIDY LORENA', 'https://drive.google.com/uc?id=1ifdgfJfqPpz051au4VHeovIwMbOAezL9&export=download'],
+]
+
+text = "Hi!\n{name}\nHere is the link you wanted:\n{url}"
+html = '''
 <!DOCTYPE html>
 <html lang="en" >
 
 <head>
   <meta charset="UTF-8">
-  <title>Shake it! Happy holidays to all our subscribers</title>
-  
-  
-  
-  
+  <title>Zirus pizza</title>
   
 </head>
 
@@ -17,7 +27,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!--Fix to get Windows Phone 8 to render CSS3 and Media Queries-->
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <title>Shake it! Happy holidays to all our subscribers</title>
+    <title>Zirus pizza</title>
     <style type="text/css">
         /* Mobile Responsive Email Editor Template built by Adestra Digital Design - CP15407 - Dec17' GM */
         body {
@@ -619,6 +629,8 @@ th.amf__dt-none,td.amf__dt-none {display:table-cell !important;}
                                         </div>
                                         <div class="mainMessage" id="message">
                                             <h1 style="color: #ffffff; font-weight: lighter; font-style: italic; font-size: 24px"><i>La felicidad se disfruta en triángulo...</i></h1>
+                                        
+                                            <h1 style="color: #ffffff; font-weight: lighter; font-style: italic; font-size: 24px"><i>Hola! ${name} </i></h1>
                                         </div>
                                         <div>
                                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
@@ -648,15 +660,15 @@ th.amf__dt-none,td.amf__dt-none {display:table-cell !important;}
                                             <tr>
                                                 <td align="center" style="padding:0 0 0 0;" width="100%">
                                                     <!--[if gte mso 9]>
-                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://email.adestra.com/q/143dDy4yzQ88YxkjDnlfm/wv" style="height:60px;v-text-anchor:middle;width:320px;" arcsize="1665%" strokecolor="#ececec" fillcolor="#ffffff">
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${url}" style="height:60px;v-text-anchor:middle;width:320px;" arcsize="1665%" strokecolor="#ececec" fillcolor="#ffffff">
                                             <w:anchorlock/>
                                             <center style="color:#000000;font-family:sans-serif;font-size:21px;font-weight:bold;">Shake it!</center>
                                             </v:roundrect> 
                                         <![endif]-->
                                                     <!--[if !mso]><!-- -->
                                                     <div align="center" bgcolor="#E82127" border="0" cellpadding="0" cellspacing="0" class="fallback_btn" style="margin:0 0 50px 0; " width="100%">
-                                                        <a href="http://email.adestra.com/q/143dDy4yzQ88YxkjDnlfm/wv" style="background-color:#ffffff; border-radius: 999px;
-            -webkit-border-radius: 999px;-moz-border-radius: 999px;-o-border-radius: 999px; color: #000000; font-weight: bold; text-align: center; padding: 20px 60px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; text-decoration: none;">Shake it!</a>
+                                                        <a href="${url}" style="background-color:#ffffff; border-radius: 999px;
+            -webkit-border-radius: 999px;-moz-border-radius: 999px;-o-border-radius: 999px; color: #000000; font-weight: bold; text-align: center; padding: 20px 60px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; text-decoration: none;">DESCARGAR BONO</a>
                                                     </div>
                                                     <!--<![endif]-->
                                                 </td>
@@ -723,11 +735,7 @@ th.amf__dt-none,td.amf__dt-none {display:table-cell !important;}
                                                 </tr>
                                             </table>
                                         </label>
-                                        <div class="finalMessage" style="display:none; visibility: hidden; max-height:0px;overflow:hidden;"><h2 style="color: #ffffff; font-weight: lighter; font-style: italic; font-size: 24px; margin-bottom:9px; margin-left:9px; margin-right:9px; margin-top:9px">Let’s make this season’s emails sparkle!<br>
-Happy holidays from all of us here at Adestra.</h2>
-&nbsp;
-<h5 style="color: #ffffff; font-weight: lighter; font-style: italic; font-size: 16px"><a href="http://email.adestra.com/c/14JW167nFESOSyZOs5AM8VRa" style="color: #ffffff; text-decoration: underline; font-weight: lighter; font-style: italic; font-size: 16px">Find out how we make interactive emails →</a></h5>
-</div>
+
                                         <!--<![endif]-->
                                     </td>
                                 </tr>
@@ -749,26 +757,20 @@ Happy holidays from all of us here at Adestra.</h2>
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
                                                 <td width="40">
-                                                    <a href="https://www.facebook.com/zirusoficial" target="_blank"><img alt="Facebook &#43;" border="0" height="40" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ0OCwwSDY0QzI4LjcwNCwwLDAsMjguNzA0LDAsNjR2Mzg0YzAsMzUuMjk2LDI4LjcwNCw2NCw2NCw2NGgxOTJWMzM2aC02NHYtODBoNjR2LTY0YzAtNTMuMDI0LDQyLjk3Ni05Niw5Ni05Nmg2NHY4MCAgICBoLTMyYy0xNy42NjQsMC0zMi0xLjY2NC0zMiwxNnY2NGg4MGwtMzIsODBoLTQ4djE3Nmg5NmMzNS4yOTYsMCw2NC0yOC43MDQsNjQtNjRWNjRDNTEyLDI4LjcwNCw0ODMuMjk2LDAsNDQ4LDB6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" style="display:block;" title="Google &#43;" width="40"></a>
-                                                   
+                                                    <a href="https://www.facebook.com/zirusoficial" target="_blank"><img alt="Facebook &#43;" border="0" height="40" src="https://i.ibb.co/FH0SHvZ/facebook-2.png" style="display:block;" title="Facebook &#43;" width="40"></a>
                                                 </td>
                                                 <td width="3">&nbsp;
                                                 </td>
                                                 <td width="40">
-                                                    <a href="https://www.instagram.com/zirusoficial" target="_blank"><img alt="LinkedIn" border="0" height="40" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE2OS4wNjMgMTY5LjA2MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8cGF0aCBkPSJNMTIyLjQwNiwwSDQ2LjY1NEMyMC45MjksMCwwLDIwLjkzLDAsNDYuNjU1djc1Ljc1MmMwLDI1LjcyNiwyMC45MjksNDYuNjU1LDQ2LjY1NCw0Ni42NTVoNzUuNzUyICAgYzI1LjcyNywwLDQ2LjY1Ni0yMC45Myw0Ni42NTYtNDYuNjU1VjQ2LjY1NUMxNjkuMDYzLDIwLjkzLDE0OC4xMzMsMCwxMjIuNDA2LDB6IE0xNTQuMDYzLDEyMi40MDcgICBjMCwxNy40NTUtMTQuMjAxLDMxLjY1NS0zMS42NTYsMzEuNjU1SDQ2LjY1NEMyOS4yLDE1NC4wNjMsMTUsMTM5Ljg2MiwxNSwxMjIuNDA3VjQ2LjY1NUMxNSwyOS4yMDEsMjkuMiwxNSw0Ni42NTQsMTVoNzUuNzUyICAgYzE3LjQ1NSwwLDMxLjY1NiwxNC4yMDEsMzEuNjU2LDMxLjY1NVYxMjIuNDA3eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPHBhdGggZD0iTTg0LjUzMSw0MC45N2MtMjQuMDIxLDAtNDMuNTYzLDE5LjU0Mi00My41NjMsNDMuNTYzYzAsMjQuMDIsMTkuNTQyLDQzLjU2MSw0My41NjMsNDMuNTYxczQzLjU2My0xOS41NDEsNDMuNTYzLTQzLjU2MSAgIEMxMjguMDk0LDYwLjUxMiwxMDguNTUyLDQwLjk3LDg0LjUzMSw0MC45N3ogTTg0LjUzMSwxMTMuMDkzYy0xNS43NDksMC0yOC41NjMtMTIuODEyLTI4LjU2My0yOC41NjEgICBjMC0xNS43NSwxMi44MTMtMjguNTYzLDI4LjU2My0yOC41NjNzMjguNTYzLDEyLjgxMywyOC41NjMsMjguNTYzQzExMy4wOTQsMTAwLjI4MSwxMDAuMjgsMTEzLjA5Myw4NC41MzEsMTEzLjA5M3oiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTxwYXRoIGQ9Ik0xMjkuOTIxLDI4LjI1MWMtMi44OSwwLTUuNzI5LDEuMTctNy43NywzLjIyYy0yLjA1MSwyLjA0LTMuMjMsNC44OC0zLjIzLDcuNzhjMCwyLjg5MSwxLjE4LDUuNzMsMy4yMyw3Ljc4ICAgYzIuMDQsMi4wNCw0Ljg4LDMuMjIsNy43NywzLjIyYzIuOSwwLDUuNzMtMS4xOCw3Ljc4LTMuMjJjMi4wNS0yLjA1LDMuMjItNC44OSwzLjIyLTcuNzhjMC0yLjktMS4xNy01Ljc0LTMuMjItNy43OCAgIEMxMzUuNjYxLDI5LjQyMSwxMzIuODIxLDI4LjI1MSwxMjkuOTIxLDI4LjI1MXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" style="display:block;" title="LinkedIn" width="40"></a>
+                                                    <a href="https://www.instagram.com/zirusoficial" target="_blank"><img alt="Instagram" border="0" height="40" src="https://i.ibb.co/B3QP7BZ/logotipo-de-instagram.png" style="display:block;" title="Instagram" width="40"></a>
                                                 </td>
                                                 <td width="3">&nbsp;
                                                 </td>
                                                 <td width="40">
-                                                    <a href="http://zirus.pizza" target="_blank"><img alt="Twitter" border="0" height="40" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMS43MjggNTExLjcyOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMTQ3LjkyNSAzNzkuMTE2Yy0yMi4zNTctMS4xNDItMjEuOTM2LTMyLjU4OC0uMDAxLTMzLjY4IDYyLjEzNS4yMTYgMjI2LjAyMS4wNTggMjkwLjEzMi4xMDMgMTcuNTM1IDAgMzIuNTM3LTExLjkzMyAzNi40ODEtMjkuMDE3bDM2LjQwNC0xNTcuNjQxYzIuMDg1LTkuMDI2LS4wMTktMTguMzY4LTUuNzcxLTI1LjYyOXMtMTQuMzYzLTExLjQ4NC0yMy42MjYtMTEuNDg0Yy0yNS43OTEgMC0yNDQuNzE2LS45OTEtMzU2Ljg0OS0xLjQzOGwtMTcuNzc1LTY1Ljk1M2MtNC4yNjctMTUuNzYxLTE4LjY1LTI2Ljc2OC0zNC45NzgtMjYuNzY4aC01Ni45NDJjLTguMjg0IDAtMTUgNi43MTYtMTUgMTVzNi43MTYgMTUgMTUgMTVoNTYuOTQyYzIuODExIDAgNS4yODYgMS44OTUgNi4wMTcgNC41OTJsNjguMjY1IDI1My4yNzZjLTEyLjAwMy40MzYtMjMuMTgzIDUuMzE4LTMxLjY2MSAxMy45Mi04LjkwOCA5LjA0LTEzLjY5MiAyMS4wMDYtMTMuNDcxIDMzLjY5NS40NDIgMjUuMzc3IDIxLjQ1MSA0Ni4wMjMgNDYuODMzIDQ2LjAyM2gyMS44NzJjLTMuMjUxIDYuODI0LTUuMDc2IDE0LjQ1My01LjA3NiAyMi41MDEgMCAyOC45NSAyMy41NTIgNTIuNTAyIDUyLjUwMiA1Mi41MDJzNTIuNTAyLTIzLjU1MiA1Mi41MDItNTIuNTAyYzAtOC4wNDktMS44MjYtMTUuNjc3LTUuMDc3LTIyLjUwMWg5NC43MTZjLTMuMjQ4IDYuODIyLTUuMDczIDE0LjQ0Ny01LjA3MyAyMi40OTMgMCAyOC45NSAyMy41NTMgNTIuNTAyIDUyLjUwMiA1Mi41MDIgMjguOTUgMCA1Mi41MDMtMjMuNTUzIDUyLjUwMy01Mi41MDIgMC04LjM1OS0xLjk3NC0xNi4yNjMtNS40NjQtMjMuMjg1IDUuOTM2LTEuOTk5IDEwLjIxNi03LjU5OCAxMC4yMTYtMTQuMjA3IDAtOC4yODQtNi43MTYtMTUtMTUtMTV6bTkxLjc5OSA1Mi41MDFjMCAxMi40MDgtMTAuMDk0IDIyLjUwMi0yMi41MDIgMjIuNTAycy0yMi41MDItMTAuMDk0LTIyLjUwMi0yMi41MDJjMC0xMi40MDEgMTAuMDg0LTIyLjQ5MSAyMi40ODMtMjIuNTAxaC4wMzhjMTIuMzk5LjAxIDIyLjQ4MyAxMC4xIDIyLjQ4MyAyMi41MDF6bTE2Ny4wNyAyMi40OTRjLTEyLjQwNyAwLTIyLjUwMi0xMC4wOTUtMjIuNTAyLTIyLjUwMiAwLTEyLjI4NSA5Ljg5OC0yMi4yOTYgMjIuMTM3LTIyLjQ5M2guNzMxYzEyLjI0LjE5NyAyMi4xMzggMTAuMjA4IDIyLjEzOCAyMi40OTMtLjAwMSAxMi40MDctMTAuMDk2IDIyLjUwMi0yMi41MDQgMjIuNTAyem03NC44Ni0zMDIuMjMzYy4wODkuMTEyLjA3Ni4xNjUuMDU3LjI1MWwtMTUuMzM5IDY2LjQyNWgtNTEuOTQybDguODQ1LTY3LjAyMyA1OC4xNDkuMjM0Yy4wODkuMDAyLjE0Mi4wMDIuMjMuMTEzem0tMTU0LjY0NSAxNjMuNjZ2LTY2Ljk4NGg1My4yMDJsLTguODQgNjYuOTg0em0tNzQuMzgyIDAtOC45MTItNjYuOTg0aDUzLjI5NHY2Ni45ODR6bS02OS4wNTMgMGgtLjA0N2MtMy42NTYtLjAwMS02Ljg3Ny0yLjQ2Ny03LjgyOC01Ljk4bC0xNi40NDItNjEuMDA0aDU0LjE5M2w4LjkxMiA2Ni45ODR6bTU2LjE0OS05Ni45ODMtOS4wMjEtNjcuNzk5IDY2LjMwNi4yNjd2NjcuNTMyem04Ny4yODYgMHYtNjcuNDExbDY2LjAyMi4yNjYtOC44NjEgNjcuMTQ1em0tMTI2LjU4OC02Ny45MjIgOS4wMzcgNjcuOTIxaC01OC4yODdsLTE4LjM4LTY4LjE5NHptMjM3LjYzNSAxNjQuOTA1aC0zNi40MjZsOC44NC02Ni45ODRoNDguOTczbC0xNC4xMzcgNjEuMjE3Yy0uNzg0IDMuMzk2LTMuNzY1IDUuNzY3LTcuMjUgNS43Njd6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" style="display:block;" title="Twitter" width="40"></a>
+                                                    <a href="http://zirus.pizza" target="_blank"><img alt="Shop" border="0" height="40" src="https://i.ibb.co/tzFskZZ/shopping-cart-2.png" style="display:block;" title="Shop" width="40"></a>
                                                 </td>
                                             </tr>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img alt="" border="0" height="20" src="http://email.adestra.com/adestra/images/spacer.gif" style="display:block" width="1">
                                     </td>
                                 </tr>
                             </table>
@@ -810,11 +812,11 @@ Happy holidays from all of us here at Adestra.</h2>
             </td>
         </tr>
     </table>
-<img src="http://email.adestra.com/t/1oMtR8RJs5oDfm.png" alt="">
-<!--[if lt mso 12]><img src="https://t.msgf.net/r/1oMtR8RJs5oDfm.png?c=1" alt=""><![endif]--><![if gt mso 11]><img src="https://t.msgf.net/r/1oMtR8RJs5oDfm.png" alt=""><![endif]>
 </body>
 </html>
   
 </body>
 
 </html> 
+
+'''
